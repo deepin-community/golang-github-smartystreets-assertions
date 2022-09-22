@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+export DH_GOLANG_GO_GENERATE := 1
+export DH_GOLANG_EXCLUDES := assert/example
+export DH_GOLANG_INSTALL_EXTRA := $(wildcard internal/go-diff/testdata/*)
+
+%:
+	dh $@ --buildsystem=golang --with=golang

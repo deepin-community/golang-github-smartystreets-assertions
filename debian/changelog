@@ -1,0 +1,27 @@
+golang-github-smartystreets-assertions (1.10.1+ds-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Martín Ferrari ]
+  * Update DH compat level to 11.
+  * Remove references to vendored packages that were removed upstream.
+  * Packaging refresh.
+
+  [ Dmitry Smirnov ]
+  * New upstream release.
+  * DH to version 12
+  * golang-go --> golang-any
+  * Standards-Version: 4.4.1
+  * Build with "go generate"; Build-Depends += "golang-golang-x-tools".
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 29 Dec 2019 11:25:52 +1100
+
+golang-github-smartystreets-assertions (1.6.0+dfsg-1) unstable; urgency=medium
+
+  * Initial release (Closes: #820421).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 08 Apr 2016 18:00:09 +1000

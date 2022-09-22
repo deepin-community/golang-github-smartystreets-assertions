@@ -1,0 +1,30 @@
+Source: golang-github-smartystreets-assertions
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>,
+           Tim Potter <tpot@hpe.com>,
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+    golang-github-jacobsa-oglematchers-dev,
+    golang-golang-x-net-dev,
+    golang-golang-x-tools,
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-smartystreets-assertions
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-smartystreets-assertions.git
+Homepage: https://github.com/smartystreets/assertions
+XS-Go-Import-Path: github.com/smartystreets/assertions
+
+Package: golang-github-smartystreets-assertions-dev
+Architecture: all
+Depends: ${misc:Depends},
+    golang-github-jacobsa-oglematchers-dev,
+    golang-golang-x-net-dev,
+Description: fluent assertion-style functions
+ This package contains the implementations for all assertions which are
+ referenced in goconvey package (github.com/smartystreets/goconvey/convey)
+ and gunit (github.com/smartystreets/gunit) for use with the So(...)
+ method. They can also be used in traditional Go test functions and even in
+ applications.

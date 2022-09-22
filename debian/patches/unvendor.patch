@@ -1,0 +1,39 @@
+Last-Update: 2016-04-04
+Forwarded: not-needed
+Author: Dmitry Smirnov <onlyjob@debian.org>
+Description: un-vendor bundled dependencies.
+
+--- a/collections.go
++++ b/collections.go
+@@ -4,7 +4,7 @@
+ 	"fmt"
+ 	"reflect"
+ 
+-	"github.com/smartystreets/assertions/internal/oglematchers"
++	"github.com/jacobsa/oglematchers"
+ )
+ 
+ // ShouldContain receives exactly two parameters. The first is a slice and the
+--- a/equality.go
++++ b/equality.go
+@@ -7,8 +7,8 @@
+ 	"reflect"
+ 	"strings"
+ 
++	"github.com/jacobsa/oglematchers"
+ 	"github.com/smartystreets/assertions/internal/go-render/render"
+-	"github.com/smartystreets/assertions/internal/oglematchers"
+ )
+ 
+ // ShouldEqual receives exactly two parameters and does an equality check
+--- a/quantity.go
++++ b/quantity.go
+@@ -3,7 +3,7 @@
+ import (
+ 	"fmt"
+ 
+-	"github.com/smartystreets/assertions/internal/oglematchers"
++	"github.com/jacobsa/oglematchers"
+ )
+ 
+ // ShouldBeGreaterThan receives exactly two parameters and ensures that the first is greater than the second.
