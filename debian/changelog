@@ -1,3 +1,12 @@
+golang-github-smartystreets-assertions (1.10.1+ds-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Christoph Senkel ]
+  * Disable failing TestMapSortRendering test. (Closes: #1008443)
+
+ -- Christoph Berg <myon@debian.org>  Tue, 24 May 2022 10:55:11 +0200
+
 golang-github-smartystreets-assertions (1.10.1+ds-1) unstable; urgency=medium
 
   [ Paul Tagliamonte ]

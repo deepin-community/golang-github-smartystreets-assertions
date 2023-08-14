@@ -1,2 +1,3 @@
 t-skip--TestAssertionsFixture.patch
 unvendor.patch
+render_test.go.patch
